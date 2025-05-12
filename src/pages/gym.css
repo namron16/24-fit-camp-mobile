@@ -1,0 +1,42 @@
+@import url('../main.css');
+
+.member-gym {
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.gym-posts__container {
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.gym-posts {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.member-gym .post-card__container {
+    position: relative;
+    width: 100%;
+}
+
+.member-gym .post-card__container .post-card-details {
+    font-size: 13px;
+}
+
+.member-gym .post-card__container img {
+    width: 25px;
+    height: 25px;
+}
+

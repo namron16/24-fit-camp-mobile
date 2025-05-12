@@ -1,0 +1,25 @@
+{
+  "members": [
+    {
+      "id": "3b979aec-7158-4b93-86f4-ec0321a26d83",
+      "email": "nam@example.com",
+      "contact": "09778866554",
+      "firstName": "John",
+      "lastName": "Doe",
+      "type": "student",
+      "plan": "3 months",
+      "isActive": true,
+      "membershipStart": "2025-04-30T03:58:32.944Z",
+      "membershipEnd": "2025-07-30T03:58:32.944Z",
+      "notified": false
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "post": "this is a post",
+      "author": "24-Fit Camp",
+      "currDate": "2025-3-24"
+    }
+  ]
+}

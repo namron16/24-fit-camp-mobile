@@ -1,0 +1,59 @@
+@import url('../main.css');
+
+
+.header {
+    height: 5vh;
+    margin: 5px 0px;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-bg-);
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-bg-);
+    color: #fff;
+    padding: 5px 8px;
+}
+
+.logo img {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    object-fit: cover;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.member-header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.member-icon {
+    font-size: 1.2rem;
+}

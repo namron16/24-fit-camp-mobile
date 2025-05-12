@@ -1,0 +1,26 @@
+@import url('../main.css');
+
+.member-notifications {
+    padding: 1rem;
+
+}
+
+.notifications-container,
+.no-notifications {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-notifications {
+    font-size: 15px;
+
+    opacity: 0.5;
+}
+
+.notification {
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+
+}
