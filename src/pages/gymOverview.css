@@ -1,0 +1,97 @@
+@import url('../main.css');
+
+
+.member-rewards {
+    background-color: var(--light-bg);
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    border-radius: 10px;
+    height: 90%;
+}
+
+.member-rewards h1 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.member-rewards i {
+    color: orange;
+}
+
+.member-rewards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+
+
+.reward-items {
+    background-color: var(--light-bg);
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    border-radius: 10px;
+}
+
+.reward-items__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.reward-name {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.reward-description {
+    color: gray;
+    font-size: 13px;
+    width: 15ch;
+}
+
+.reward-points {
+    color: var(--text-green);
+    background-color: var(--transparent-green);
+    padding: 5px 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.reward-actions {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+}
+
+.reward-actions button {
+    padding: 8px 1rem;
+    font-family: inherit;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark-bg-);
+    color: white;
+    cursor: pointer;
+}
+
+.disabled-reward {
+    opacity: 0.5;
+    pointer-events: none;
+
+}
+
+.disabled-reward button {
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
+}

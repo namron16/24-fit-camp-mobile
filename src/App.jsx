@@ -12,6 +12,8 @@ import Layout from "./pages/Layout";
 import Overview from "./pages/Overview";
 import Profile from "./pages/Profile";
 import Gym from "./pages/Gym";
+import GymOverview from "./pages/GymOverview";
+import GymRewards from "./pages/GymRewards";
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications";
 
@@ -45,7 +47,24 @@ const App = () => {
               <Gym />
             </Suspense>
           }
-        />
+        >
+          <Route
+            index
+            element={
+              <Suspense fallback={<Loading />}>
+                <GymOverview />
+              </Suspense>
+            }
+          />
+          <Route
+            path="points-history"
+            element={
+              <Suspense fallback={<Loading />}>
+                <GymRewards />
+              </Suspense>
+            }
+          />
+        </Route>
         <Route
           path="Notifications"
           element={
@@ -71,7 +90,5 @@ const App = () => {
     </QueryClientProvider>
   );
 };
-
-
 
 export default App;

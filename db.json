@@ -14,12 +14,12 @@
       "notified": false
     }
   ],
-  "posts": [
+  "rewards": [
     {
-      "id": 1,
-      "post": "this is a post",
-      "author": "24-Fit Camp",
-      "currDate": "2025-3-24"
+      "id": "3b979aec-7158-4b93-86f4-ec0321a26d83",
+      "name": "Free Membership",
+      "description": "Free Membership for 3 months",
+      "points": "1000"
     }
   ]
 }

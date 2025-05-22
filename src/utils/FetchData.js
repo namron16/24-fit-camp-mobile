@@ -90,15 +90,15 @@ export const useEditMember = (id) => {
   return { editMember };
 };
 
-//fetch posts
-export const useFetchPosts = () => {
+//rewards hook
+export const useFetchRewards = () => {
   const { data } = useSuspenseQuery({
-    queryKey: ["posts"],
+    queryKey: ["rewards"],
     queryFn: async () => {
-      return await axios.get("http://localhost:4001/posts");
+      return await axios.get("http://localhost:4001/rewards");
     },
-    staleTime: 1000 * 60 * 10,
+    staleTime: 1000 * 60 * 5,
   });
 
-  return { posts: data };
+  return { rewards: data };
 };
