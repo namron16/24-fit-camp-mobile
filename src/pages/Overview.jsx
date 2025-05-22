@@ -48,6 +48,7 @@ const Overview = () => {
       </div>
 
       <div className="qr-code">
+        <span>Member QR Code</span>
         {qrCodeValue ? (
           <div className="member-qr">
             <QRCode

@@ -28,11 +28,11 @@ const MembershipDates = ({ startDate, endDate }) => {
     <div className="membership-info">
       <div className="membership-info-items">
         <span className="membership-title">Membership Start</span>
-        <span className="opacity">{formattedStartDate}</span>
+        <span className="membership-detail">{formattedStartDate}</span>
       </div>
       <div className="membership-info-items">
         <span className="membership-title">Membership End</span>
-        <span className="opacity">{formattedEndDate}</span>
+        <span className="membership-detail">{formattedEndDate}</span>
       </div>
       <div className="membership-info-items">
         <span className="remaining-time">{remainingTime}</span>

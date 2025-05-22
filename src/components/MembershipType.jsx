@@ -18,11 +18,11 @@ const MembershipType = ({ type, plan }) => {
     <div className="membership-info">
       <div className="membership-info-items">
         <span className="membership-title">Membership Type</span>
-        <span style={getTypeStyle}>{type}</span>
+        <span className="membership-detail" style={getTypeStyle}>{type}</span>
       </div>
       <div className="membership-info-items">
         <span className="membership-title">Membership Plan</span>
-        <span className="opacity">{plan}</span>
+        <span className="membership-detail">{plan}</span>
       </div>
     </div>
   );
