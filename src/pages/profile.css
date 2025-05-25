@@ -61,17 +61,17 @@
 }
 
 .members__form {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Poppins', monospace;
     display: flex;
     flex-direction: column;
     /* max-width: 350px; */
     margin: 3.5rem 2rem;
     gap: 10px;
-
+    padding: 10px 0px;
 }
 
 .members__form em {
-    font-size: 8px;
+    font-size: 12px;
     display: block;
     color: var(--red-clr);
 }
@@ -84,7 +84,7 @@
 }
 
 .members__form-items label {
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 .members__form-items input {
@@ -159,4 +159,3 @@
     background-color: #cccccc;
     cursor: not-allowed;
 }
-

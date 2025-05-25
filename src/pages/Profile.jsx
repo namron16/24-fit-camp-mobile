@@ -4,7 +4,7 @@ import { useForm } from "@tanstack/react-form";
 import { useFetchMember, useEditMember } from "../utils/FetchData";
 import usePageTransition from "../utils/usePageTransition";
 import Loading from "../loading/Loading";
-import './profile.css'
+import "./profile.css";
 
 const Profile = () => {
   const { member } = useFetchMember();
