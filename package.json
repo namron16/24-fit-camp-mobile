@@ -1,5 +1,6 @@
 {
   "name": "24-fit-camp-mobile",
+  "homepage": "https://24-fit-camp.netlify.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
