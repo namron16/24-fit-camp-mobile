@@ -13,14 +13,14 @@ const Overview = () => {
 
   const value = useMemo(
     () => ({
-      firstName: memberDetail?.firstName,
-      lastName: memberDetail?.lastName,
-      contact: memberDetail?.contact,
-      email: memberDetail?.email,
-      type: memberDetail?.type,
-      plan: memberDetail?.plan,
-      membershipStart: memberDetail?.membershipStart,
-      membershipEnd: memberDetail?.membershipEnd,
+      firstName: memberDetail?.firstName || "",
+      lastName: memberDetail?.lastName || "",
+      contact: memberDetail?.contact || "",
+      email: memberDetail?.email || "",
+      type: memberDetail?.type || "",
+      plan: memberDetail?.plan || "",
+      membershipStart: memberDetail?.membershipStart || "",
+      membershipEnd: memberDetail?.membershipEnd || "",
     }),
     [memberDetail]
   );

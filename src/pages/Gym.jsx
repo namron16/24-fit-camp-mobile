@@ -11,15 +11,15 @@ const Gym = () => {
   const memberDetails = member?.data?.[0];
   const value = useMemo(
     () => ({
-      firstName: memberDetails?.firstName,
-      lastName: memberDetails?.lastName,
-      email: memberDetails?.email,
-      contact: memberDetails?.contact,
-      type: memberDetails?.type,
-      plan: memberDetails?.plan,
-      membershipStart: memberDetails?.membershipStart,
-      membershipEnd: memberDetails?.membershipEnd,
-      gymPoints: memberDetails?.points,
+      firstName: memberDetails?.firstName || "",
+      lastName: memberDetails?.lastName || "",
+      email: memberDetails?.email || "",
+      contact: memberDetails?.contact || "",
+      type: memberDetails?.type || "",
+      plan: memberDetails?.plan || "",
+      membershipStart: memberDetails?.membershipStart || "",
+      membershipEnd: memberDetails?.membershipEnd || "",
+      gymPoints: memberDetails?.points || "",
     }),
     [memberDetails]
   );
@@ -30,19 +30,17 @@ const Gym = () => {
     year: "numeric",
   });
 
- 
-
   const { isPending, showContent } = usePageTransition(0);
   if (!showContent || isPending) return <Loading />;
   return (
     <section className="member-gym">
       <div className="rewards-header">
         <h1>Fitness Rewards</h1>
-        <span>Member since {formatDate}</span>
+        <span>Member since {formatDate || ""}</span>
         <div className="member-points">
           <span>Current Points</span>
           <div className="current-points">
-            <i className="fa-solid fa-trophy"></i> {value.gymPoints}
+            <i className="fa-solid fa-trophy"></i> {value.gymPoints || 0}
           </div>
         </div>
       </div>
